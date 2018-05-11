@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Danielle's Trivia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto+Condensed" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 pageheader">
+                <h1>Danielle's Trivia</h1>
+                <p id="subHeader">All about Animals!</p>
+            </div>
+            <div class="col-sm-5"></div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-12 startScreen">
+                <p id="instructions">Try to answer ten questions correctly
+                    <br>in sixty seconds or less.</p>
+                <button type="button" class="btn btn-info btn-lg buttonstyle startbutton">Get Started!</button>
+            </div>
+        </div>
+        <div class="row theTimer">
+            <div class="col-sm-6">
+                <p style="font-size: 50px;">Time Left:&nbsp<span id="show-number"></span></p>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-9 questionColumn">
+                <form>
+                    <p>Question 1:  Which of the following dogs is the smallest? </p>
+                    <input type="radio" name="question1" value="Dachshund"> Dachshund
+                    <br>
+                    <input type="radio" name="question1" value="Poodle"> Poodle
+                    <br>
+                    <input type="radio" name="question1" value="Chihuhua"> Chihuhua
+                    <br>
+                    <br>
+                    <p>Question 2: What colours are zebras?</p>
+                    <input type="radio" name="question2" value="White with black stripes"> White with black stripes
+                    <br>
+                    <input type="radio" name="question2" value="Black with white stripes"> Black with white stripes
+                    <br>
+                    <input type="radio" name="question2" value="Both"> Both
+                    <br>
+                    <br>
+                    <p>Question 3:What is the biggest animal that has ever lived?</p>
+                    <input type="radio" name="question3" value="Blue Whale"> Blue Whale
+                    <br>
+                    <input type="radio" name="question3" value="Brontosaurus"> Brontosaurus
+                    <br>
+                    <input type="radio" name="question3" value="African Elephant"> African Elephant
+                    <br>
+                    <br>
+                    <p>What pets do more families own?</p>
+                    <input type="radio" name="question4" value="Cats"> Cats
+                    <br>
+                    <input type="radio" name="question4" value="Dogs"> Dogs
+                    <br>
+                    <input type="radio" name="question4" value="Horses"> Horses
+                    <br>
+                    <br>
+                    <p>Which of the following animals sleeps standing up?</p>
+                    <input type="radio" name="question5" value="Gorillas"> Gorillas
+                    <br>
+                    <input type="radio" name="question5" value="Flamingos"> Flamingos
+                    <br>
+                    <input type="radio" name="question5" value="Camels"> Camels
+                    <br>
+                    <br>
+                    <p>Question 6: What is the fastest water animal?</p>
+                    <input type="radio" name="question6" value="Porpoise"> Porpoise
+                    <br>
+                    <input type="radio" name="question6" value="Sailfish"> Sailfish
+                    <br>
+                    <input type="radio" name="question6" value="Tuna"> Tuna
+                    <br>
+                    <br>
+                    <p>Question 7: What is arachnophobia?</p>
+                    <input type="radio" name="question7" value="Fear of snakes"> Fear of snakes
+                    <br>
+                    <input type="radio" name="question7" value="Fear of spiders"> Fear of spiders
+                    <br>
+                    <input type="radio" name="question7" value="Fear of twins"> Fear of twins
+                    <br>
+                    <br>
+                    <p>Question 8: What is a group of lions?</p>
+                    <input type="radio" name="question8" value="Pride"> Pride
+                    <br>
+                    <input type="radio" name="question8" value="Herd"> Herd
+                    <br>
+                    <input type="radio" name="question8" value="Bounty"> Bounty
+                    <br>
+                    <br>
+                    <p>Question 9: What is the name of an adult female horse?</p>
+                    <input type="radio" name="question9" value="Mare"> Mare
+                    <br>
+                    <input type="radio" name="question9" value="Colt"> Colt
+                    <br>
+                    <input type="radio" name="question9" value="Donkey"> Donkey
+                    <br>
+                    <br>
+                    <p>Question 10: How many legs does a spider have?</p>
+                    <input type="radio" name="question10" value="4"> 4
+                    <br>
+                    <input type="radio" name="question10" value="6"> 6
+                    <br>
+                    <input type="radio" name="question10" value="8"> 8
+                    <br>
+                </form>
+                <br>
+                <button type="button" class="btn btn-info btn-lg finish">Finish
+            </div>
+            <!-- <div class="col-sm-3"></div> -->
+        </div>
+        <div class="row FinishScreen">
+            <div class="col-sm-9">
+                <p>Time's Up! Your final score:</p>
+                <p>Correct Responses:&nbsp<span id="rightResponses"></span></p>
+                <p>Incorrect Responses:&nbsp<span id="wrongResponses"></span></p>
+                <br><br>
+                <p>Here are the Correct Answers:<br>
+                    Question 1: Which of the following dogs is the smallest?<br>
+                    Answer: Chihuhua<br><br>
+                    Question 2: What colours are zebras?<br>
+                    Answer: Black with white stripes<br><br>
+                    Question 3: What is the biggest animal that has ever lived?<br>
+                    Answer: Blue Whale<br><br>
+                    Question 4: What pets do more families own?<br>
+                    Answer: Dogs<br><br>
+                    Question 5: Which of the following animals sleeps standing up?<br>
+                    Answer: Flamingos<br><br>
+                    Question 6: What is the fastest water animal?<br>
+                    Answer: Sailfish<br><br>
+                    Question 7: What is arachnophobia?<br>
+                    Answer: Fear of spiders<br><br>
+                    Question 8: What is a group of lions?<br>
+                    Answer: Pride<br><br>
+                    Question 9: What is the name of an adult female horse?<br>
+                    Answer: Mare<br><br>
+                    Question 10:How many legs does a spider have?<br>
+                    Answer: 8<br>
+                    </p>
+
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <!-- jQuery Link -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!-- Javascript Link -->
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
