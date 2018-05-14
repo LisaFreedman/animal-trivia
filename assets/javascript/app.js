@@ -19,7 +19,7 @@ $(document).ready(function() {
     var responseArray = []
         // Correct Answer Array
       
-    var answerArray = ["He eats Gillyweed", "Weasley Wizard Wheezes", "Sectum Sempra", "Ralph Fiennes", "Himself, holding the Quiditch Cup", "Rupert Grint", "Cornelius Fudge", "Outstanding Wizarding Level", "Squib", "Removes parts of someone's memory"]
+    var answerArray = ["Chihuhua", "Black with white stripes", "Blue Whale", "Dogs", "Flamingos", "Sailfish", "Fear of spiders", "Pride", "Mare", "8"]
     console.log(answerArray)
 
 
